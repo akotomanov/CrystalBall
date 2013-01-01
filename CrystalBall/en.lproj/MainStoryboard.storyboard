@@ -44,6 +44,9 @@
                             <constraint firstItem="DaZ-LY-BPQ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="z0V-Ej-8jz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="predictionLabel" destination="DaZ-LY-BPQ" id="dyo-sH-OkF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,6 +60,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="buttonPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="predictionLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>
