@@ -21,6 +21,9 @@
 		CCB4DD771694CF8A00F7B5B9 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB4DD761694CF8A00F7B5B9 /* background.png */; };
 		CCB4DD7A1694EF8500F7B5B9 /* button_bg_on.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB4DD781694EF8500F7B5B9 /* button_bg_on.png */; };
 		CCB4DD7B1694EF8500F7B5B9 /* button_bg_off.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB4DD791694EF8500F7B5B9 /* button_bg_off.png */; };
+		CCB4DD7F1694F26000F7B5B9 /* button_bg_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB4DD7C1694F26000F7B5B9 /* button_bg_off@2x.png */; };
+		CCB4DD801694F26000F7B5B9 /* button_bg_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB4DD7D1694F26000F7B5B9 /* button_bg_on@2x.png */; };
+		CCB4DD811694F26000F7B5B9 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB4DD7E1694F26000F7B5B9 /* background@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		CCB4DD761694CF8A00F7B5B9 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		CCB4DD781694EF8500F7B5B9 /* button_bg_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bg_on.png; sourceTree = "<group>"; };
 		CCB4DD791694EF8500F7B5B9 /* button_bg_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bg_off.png; sourceTree = "<group>"; };
+		CCB4DD7C1694F26000F7B5B9 /* button_bg_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg_off@2x.png"; sourceTree = "<group>"; };
+		CCB4DD7D1694F26000F7B5B9 /* button_bg_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg_on@2x.png"; sourceTree = "<group>"; };
+		CCB4DD7E1694F26000F7B5B9 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,9 @@
 		CCB4DD741694CF0E00F7B5B9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CCB4DD7C1694F26000F7B5B9 /* button_bg_off@2x.png */,
+				CCB4DD7D1694F26000F7B5B9 /* button_bg_on@2x.png */,
+				CCB4DD7E1694F26000F7B5B9 /* background@2x.png */,
 				CCB4DD781694EF8500F7B5B9 /* button_bg_on.png */,
 				CCB4DD791694EF8500F7B5B9 /* button_bg_off.png */,
 				CCB4DD761694CF8A00F7B5B9 /* background.png */,
@@ -183,6 +192,9 @@
 				CCB4DD771694CF8A00F7B5B9 /* background.png in Resources */,
 				CCB4DD7A1694EF8500F7B5B9 /* button_bg_on.png in Resources */,
 				CCB4DD7B1694EF8500F7B5B9 /* button_bg_off.png in Resources */,
+				CCB4DD7F1694F26000F7B5B9 /* button_bg_off@2x.png in Resources */,
+				CCB4DD801694F26000F7B5B9 /* button_bg_on@2x.png in Resources */,
+				CCB4DD811694F26000F7B5B9 /* background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
