@@ -12,12 +12,14 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="It is decidedly so" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaZ-LY-BPQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="YMq-Y3-Tfk"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="It is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" preferredMaxLayoutWidth="232" translatesAutoresizingMaskIntoConstraints="NO" id="DaZ-LY-BPQ">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="fuE-u6-YQk"/>
+                                    <constraint firstAttribute="height" constant="111" id="g2F-Lr-Ecu"/>
+                                    <constraint firstAttribute="width" constant="232" id="xWr-cE-g9j"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRv-t6-JN2">
@@ -36,12 +38,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YMq-Y3-Tfk" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="1UZ-my-AS3"/>
                             <constraint firstItem="NRv-t6-JN2" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2GZ-Y7-h67"/>
-                            <constraint firstAttribute="trailing" secondItem="DaZ-LY-BPQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Cse-Zd-b4Q"/>
-                            <constraint firstItem="DaZ-LY-BPQ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="34" id="MlB-ta-ilg"/>
+                            <constraint firstItem="YMq-Y3-Tfk" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="AcL-qo-dmt"/>
+                            <constraint firstItem="DaZ-LY-BPQ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="165" id="Ckn-WC-djQ"/>
+                            <constraint firstItem="DaZ-LY-BPQ" firstAttribute="centerX" secondItem="NRv-t6-JN2" secondAttribute="centerX" type="default" id="HKo-6V-5Lo"/>
                             <constraint firstAttribute="trailing" secondItem="NRv-t6-JN2" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Nkf-id-IHB"/>
-                            <constraint firstItem="NRv-t6-JN2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="200" id="mCB-ZZ-n4M"/>
-                            <constraint firstItem="DaZ-LY-BPQ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="z0V-Ej-8jz"/>
+                            <constraint firstAttribute="bottom" secondItem="NRv-t6-JN2" secondAttribute="bottom" constant="10" id="Xn9-F1-2P2"/>
+                            <constraint firstItem="YMq-Y3-Tfk" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="qjZ-pR-BAy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -52,6 +56,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="background.png" width="320" height="480"/>
+    </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
