@@ -37,6 +37,6 @@
                        @"Concentrate and ask again",
                        @"Unable to answer now", nil];
 
-    self.predictionLabel.text = @"Definitely yes";
+    self.predictionLabel.text = [predictionArray objectAtIndex:5];
 }
 @end
