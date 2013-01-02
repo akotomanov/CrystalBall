@@ -13,6 +13,8 @@
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender;
+- (NSArray*) getPredictionArray;
+- (void) setPredictionArray: (NSArray*) array;
 
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 
