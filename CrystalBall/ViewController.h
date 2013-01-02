@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController {
-    NSArray *predictionArray;
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender;
-- (NSArray*) getPredictionArray;
-- (void) setPredictionArray: (NSArray*) array;
 
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+
+//create predictionArray as a property of the view
+@property (strong, nonatomic) NSArray *predictionArray;
 
 @end

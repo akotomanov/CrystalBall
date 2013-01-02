@@ -14,11 +14,13 @@
 
 @implementation ViewController
 
+@synthesize predictionArray;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    predictionArray = [[NSArray alloc] initWithObjects:@"It is certain",
+    self.predictionArray = [[NSArray alloc] initWithObjects:@"It is certain",
                                 @"It is decidedly so",
                                 @"All signs say YES",
                                 @"The stars are not aligned",
@@ -36,6 +38,6 @@
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
-    self.predictionLabel.text = [predictionArray objectAtIndex:5];
+    self.predictionLabel.text = [self.predictionArray objectAtIndex:5];
 }
 @end
