@@ -28,6 +28,8 @@
 
 - (IBAction)buttonPressed:(UIButton *)sender {
     NSString *myString = @"My name is Alex";
+    [myString length];
+    [myString uppercaseString];
 
     self.predictionLabel.text = @"Definitely yes";
 }
