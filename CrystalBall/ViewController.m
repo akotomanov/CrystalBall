@@ -27,6 +27,8 @@
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
+    NSString *myString = @"My name is Alex";
+
     self.predictionLabel.text = @"Definitely yes";
 }
 @end
