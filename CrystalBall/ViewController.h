@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSArray *predictionArray;
+}
 
 - (IBAction)buttonPressed:(UIButton *)sender;
 
