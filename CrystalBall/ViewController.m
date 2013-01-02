@@ -46,4 +46,23 @@
     
     self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
 }
+
+- (BOOL) canBecomeFirstResponder {
+    return YES;
+}
+
+- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    NSLog(@"motion began");
+}
+
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake) {
+        NSLog(@"motion ended");
+    }
+}
+
+- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    NSLog(@"motion cancelled");
+}
+
 @end
