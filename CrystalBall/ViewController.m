@@ -27,9 +27,16 @@
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
-    NSString *myString = @"My name is Alex";
-    [myString length];
-    [myString uppercaseString];
+    NSArray *predictionArray = [NSArray alloc];
+    predictionArray = [predictionArray initWithObjects:@"It is certain",
+                       @"It is decidedly so",
+                       @"All signs say YES",
+                       @"The stars are not aligned",
+                       @"My reply is no",
+                       @"It is doubtful",
+                       @"Better not tell you now",
+                       @"Concentrate and ask again",
+                       @"Unable to answer now", nil];
 
     self.predictionLabel.text = @"Definitely yes";
 }
