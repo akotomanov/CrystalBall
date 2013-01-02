@@ -27,8 +27,7 @@
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
-    NSArray *predictionArray = [NSArray alloc];
-    predictionArray = [predictionArray initWithObjects:@"It is certain",
+    NSArray *predictionArray = [[NSArray alloc] initWithObjects:@"It is certain",
                        @"It is decidedly so",
                        @"All signs say YES",
                        @"The stars are not aligned",
