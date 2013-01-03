@@ -41,11 +41,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonPressed:(UIButton *)sender {
-    NSUInteger index = arc4random_uniform(self.predictionArray.count);
-    
-    self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
-}
 
 - (BOOL) canBecomeFirstResponder {
     return YES;
@@ -75,14 +70,6 @@
     NSUInteger index = arc4random_uniform(self.predictionArray.count);
     
     self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
-}
-
-//- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-//    
-//}
-
-- (void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-    self.predictionLabel.text = @"Please try again";
 }
 
 @end

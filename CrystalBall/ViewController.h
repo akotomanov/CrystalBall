@@ -11,8 +11,6 @@
 @interface ViewController : UIViewController {
 }
 
-- (IBAction)buttonPressed:(UIButton *)sender;
-
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 
 //create predictionArray as a property of the view
