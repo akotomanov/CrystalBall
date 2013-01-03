@@ -64,7 +64,25 @@
 }
 
 - (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-    NSLog(@"motion cancelled");
+    self.predictionLabel.text = @"Please try again";
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    self.predictionLabel.text = @"";
+}
+
+- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    NSUInteger index = arc4random_uniform(self.predictionArray.count);
+    
+    self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
+}
+
+//- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+//    
+//}
+
+- (void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    self.predictionLabel.text = @"Please try again";
 }
 
 @end
