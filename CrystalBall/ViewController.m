@@ -52,12 +52,14 @@
 }
 
 - (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-    NSLog(@"motion began");
+    self.predictionLabel.text = @"";
 }
 
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (motion == UIEventSubtypeMotionShake) {
-        NSLog(@"motion ended");
+        NSUInteger index = arc4random_uniform(self.predictionArray.count);
+        
+        self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
     }
 }
 
