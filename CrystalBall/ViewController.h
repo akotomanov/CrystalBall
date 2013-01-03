@@ -16,4 +16,6 @@
 //create predictionArray as a property of the view
 @property (strong, nonatomic) NSArray *predictionArray;
 
+- (void) makePrediction;
+
 @end

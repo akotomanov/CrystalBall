@@ -41,6 +41,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) makePrediction {
+    NSUInteger index = arc4random_uniform(self.predictionArray.count);
+    
+    self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
+}
 
 - (BOOL) canBecomeFirstResponder {
     return YES;
@@ -52,9 +57,7 @@
 
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (motion == UIEventSubtypeMotionShake) {
-        NSUInteger index = arc4random_uniform(self.predictionArray.count);
-        
-        self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
+        [self makePrediction];
     }
 }
 
@@ -67,9 +70,7 @@
 }
 
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    NSUInteger index = arc4random_uniform(self.predictionArray.count);
-    
-    self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
+    [self makePrediction];
 }
 
 @end
