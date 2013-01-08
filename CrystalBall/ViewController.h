@@ -16,6 +16,9 @@
 //create predictionArray as a property of the view
 @property (strong, nonatomic) NSArray *predictionArray;
 
+@property (strong, nonatomic) UIImageView *imageView;
+
+
 - (void) makePrediction;
 
 @end
